@@ -43,11 +43,3 @@ resource "google_storage_bucket" "backup_bucket" {
     }
   }
 }
-
-# gcloud iam simulate-testable-permissions \
-#   --resource="//cloudresourcemanager.googleapis.com/projects/YOUR_PROJECT" \
-#   --full-resource-name="//cloudresourcemanager.googleapis.com/projects/YOUR_PROJECT"
-
-# terraform show -json tfplan.binary > tfplan.json
-
-# gcloud beta terraform vet ./tfplan.json --policy-library=/path/to/policy-library
